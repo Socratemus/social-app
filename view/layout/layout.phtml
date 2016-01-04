@@ -1,0 +1,40 @@
+<?php echo $this->doctype(); ?>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        
+        <?php //echo $this->partial('layout/head.phtml')?>
+        <?php echo $this->headScript(); ?>
+
+    </head>
+
+    <body>
+        
+        
+        <div id="">
+            
+            <div id="Header" class="hide">
+                AICI HEADER
+            <?php //echo $this->render('layout/header.phtml')?>
+            </div>
+            
+            <div id="Main">
+                        
+            <?php echo $this->content; ?>     
+                
+            </div>
+                
+            <div id="Footer" class="hide">
+                AICI FOOTER
+                <?php //echo $this->partial('layout/footer.phtml')?>
+            </div>
+            
+        
+        </div>
+        <?php //echo $this->render('layout/scripts.phtml')?>
+        
+        <?php echo $this->inlineScript();?>
+        
+    </body>
+</html>
